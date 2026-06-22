@@ -2,8 +2,7 @@ import { useState } from "react";
 import "./productCard.css";
 
 function ProductCard({ products, selectedProducts, setSelectedProduct }) {
-  
-  const addToCompare = (id) => {
+  const addToComparison = (id) => {
     const findProduct = products.find((product) => product.id === id);
 
     if (selectedProducts.length >= 3) {
@@ -34,9 +33,9 @@ function ProductCard({ products, selectedProducts, setSelectedProduct }) {
             src={product.image}
             alt="Pixel"
           />
-          <h3>{product.name}</h3>
-          <p>${product.price}</p>
-          <button onClick={() => addToCompare(product.id)}>
+          <h3 className="product-card__title">{product.name}</h3>
+          <p className="product-card__price">${product.price}</p>
+          <button className="product-card__btn" onClick={() => addToComparison(product.id)}>
             Add to Compare
           </button>
         </div>

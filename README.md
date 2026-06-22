@@ -1,16 +1,109 @@
-# React + Vite
+# Product Comparison App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+A React application that allows users to compare up to three products side by side.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Users can select products, remove products from comparison, and easily identify differences between product characteristics. Selected products are saved in localStorage, so the comparison remains available after refreshing the page.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+* Display product cards
+* Add products to comparison
+* Compare up to 3 products
+* Prevent duplicate selections
+* Remove products from comparison
+* Highlight different product characteristics
+* Persist data using localStorage
+* Responsive and modern UI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Technologies Used
+
+* React
+* JavaScript (ES6+)
+* CSS3
+* React Icons
+* LocalStorage API
+
+---
+
+## Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/product-comparison.git
+```
+
+2. Navigate to the project folder
+
+```bash
+cd Anorbank test app
+```
+
+3. Install dependencies
+
+```bash
+npm install
+```
+
+4. Start the development server
+
+```bash
+npm run dev
+```
+
+---
+
+## Usage
+
+1. Browse available products.
+2. Click "Add to Compare".
+3. Select up to 3 products.
+4. Review the comparison table.
+5. Remove products if needed.
+6. Refresh the page and your selected products will remain saved.
+
+---
+
+## Project Structure
+
+```text
+src/
+├── assests/
+│   └── images
+│
+├── components/
+│   ├── CompareProducts/
+│   ├── ProductCard/
+│   └── ComparisonTable/
+│
+│
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## Future Improvements
+
+* Product search functionality
+* Product filtering
+* Category comparison
+* Dark mode
+* Backend integration
+* API data fetching
+
+---
+
+## Author
+
+Frontend Developer passionate about building practical React applications and improving user experience.
+
+## Live Demo
+
+https://your-project.vercel.app

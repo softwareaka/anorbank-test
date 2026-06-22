@@ -11,6 +11,15 @@ function CompareProducts({ products }) {
     JSON.parse(localStorage.getItem("selectedProduct")) || []
   );
 
+  const deleteProduct = (id) => {
+    const removedProduct = selectedProducts.filter(
+      (product) => product.id !== id
+    );
+
+    setSelectedProduct(removedProduct);
+    localStorage.setItem("selectedProduct", JSON.stringify(removedProduct));
+  };
+
   return (
     <div className="compare-page">
       <div className="container">
@@ -31,7 +40,12 @@ function CompareProducts({ products }) {
             {selectedProducts.map((product) => (
               <div className="selected-item" key={product.id}>
                 <span>{product.name}</span>
-                <CiCircleRemove className="selected-item__delete" />
+                <button
+                  className="selected-item__button"
+                  onClick={() => deleteProduct(product.id)}
+                >
+                  <CiCircleRemove className="selected-item__delete--icon" />
+                </button>
               </div>
             ))}
           </div>

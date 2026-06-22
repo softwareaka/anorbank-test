@@ -1,0 +1,47 @@
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+thead {
+  background: #111827;
+  color: white;
+}
+
+th,
+td {
+  padding: 20px;
+  text-align: center;
+}
+
+tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* tbody tr:hover {
+    background: #fafafa;
+  } */
+
+.different {
+  background: rgb(243, 171, 186);
+}
+
+.different td {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  th,
+  td {
+    padding: 14px;
+    font-size: 14px;
+  }
+}
