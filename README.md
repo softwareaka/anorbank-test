@@ -10,24 +10,24 @@ Users can select products, remove products from comparison, and easily identify 
 
 ## Features
 
-* Display product cards
-* Add products to comparison
-* Compare up to 3 products
-* Prevent duplicate selections
-* Remove products from comparison
-* Highlight different product characteristics
-* Persist data using localStorage
-* Responsive and modern UI
+- Display product cards
+- Add products to comparison
+- Compare up to 3 products
+- Prevent duplicate selections
+- Remove products from comparison
+- Highlight different product characteristics
+- Persist data using localStorage
+- Responsive and modern UI
 
 ---
 
 ## Technologies Used
 
-* React
-* JavaScript (ES6+)
-* CSS3
-* React Icons
-* LocalStorage API
+- React
+- JavaScript (ES6+)
+- CSS3
+- React Icons
+- LocalStorage API
 
 ---
 
@@ -91,12 +91,12 @@ src/
 
 ## Future Improvements
 
-* Product search functionality
-* Product filtering
-* Category comparison
-* Dark mode
-* Backend integration
-* API data fetching
+- Product search functionality
+- Product filtering
+- Category comparison
+- Dark mode
+- Backend integration
+- API data fetching
 
 ---
 
@@ -106,4 +106,4 @@ Frontend Developer passionate about building practical React applications and im
 
 ## Live Demo
 
-https://your-project.vercel.app
+https://anorbank-test-rho.vercel.app/
